@@ -1,8 +1,5 @@
 package entidades;
 
-import jdk.jfr.Event;
-
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Evento {
@@ -13,11 +10,10 @@ public class Evento {
     private Organizador organizadores;
     private int participantes;
 
-    public Evento(String id, String nome, Date dataHora, Sala salas, Organizador organizadores, int participantes) {
+    public Evento(String id, String nome, Date dataHora, Organizador organizadores, int participantes) {
         this.id = id;
         this.nome = nome;
         this.dataHora = dataHora;
-        this.salas = salas;
         this.organizadores = organizadores;
         this.participantes = participantes;
     }

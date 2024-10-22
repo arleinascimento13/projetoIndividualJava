@@ -1,13 +1,16 @@
 package entidades;
 
-public class Sala {
+import java.util.Date;
+
+public class Sala extends Evento {
     private String id;
     private String nome;
     private int capacidade;
 
-    public Sala(String id, String nome, int capacidade){
-        this.id = id;
-        this.nome = nome;
+    public Sala(String id, String nome, Date dataHora, Organizador organizadores, int participantes, String id1, String nome1, int capacidade) {
+        super(id, nome, dataHora, organizadores, participantes);
+        this.id = id1;
+        this.nome = nome1;
         this.capacidade = capacidade;
     }
 
